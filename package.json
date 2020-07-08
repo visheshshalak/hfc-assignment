@@ -1,0 +1,31 @@
+{
+  "name": "@hfc/assignment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "wip",
+  "scripts": {
+    "dev:api": "dotenv -- lerna run --stream --no-prefix --scope @hfc/api-server dev",
+    "start:api": "dotenv -- lerna run --stream --no-prefix --scope @hfc/api-server start"
+  },
+  "workspaces": [
+    "api_server",
+    "web_app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/visheshshalak/hfc-assignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/visheshshalak/hfc-assignment/issues"
+  },
+  "homepage": "https://github.com/visheshshalak/hfc-assignment#readme",
+  "devDependencies": {
+    "dotenv-cli": "^3.2.0",
+    "prettier": "^2.0.5",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "lerna": "^3.22.1"
+  }
+}
