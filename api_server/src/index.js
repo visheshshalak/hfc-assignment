@@ -1,6 +1,7 @@
 import Koa from 'koa';
 import Router from '@koa/router';
 import koaCors from '@koa/cors';
+import routers from './routes/index.js';
 
 const app = new Koa();
 const router = new Router();
@@ -22,6 +23,7 @@ router.get('/health-check', (ctx, next) => {
 });
 
 app.use(router.routes());
+app.use(routers.outletRouter.routes());
 
 app.listen(process.env.API_SERVER_PORT || 4000, () => {
   console.log(`Server ready at http://localhost:${process.env.API_SERVER_PORT || 4000}`);

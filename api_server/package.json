@@ -13,6 +13,10 @@
   "dependencies": {
     "@koa/cors": "^3.1.0",
     "@koa/router": "^9.3.1",
-    "koa": "^2.13.0"
+    "@tmcw/togeojson": "^4.1.0",
+    "d3-geo": "^1.12.1",
+    "koa": "^2.13.0",
+    "opencage-api-client": "^0.7.1",
+    "xmldom": "^0.3.0"
   }
 }
